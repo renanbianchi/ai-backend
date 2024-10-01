@@ -8,9 +8,9 @@ type IPromptType = {
 }
 
 export default class GeminiService {
-  private static genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyAn98sWa0t2DpzdQ03cUk7pLFwQBlJPZn4');
+  private static genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
-  private static fileManager = new GoogleAIFileManager(process.env.GEMINI_API_KEY || 'AIzaSyAn98sWa0t2DpzdQ03cUk7pLFwQBlJPZn4')
+  private static fileManager = new GoogleAIFileManager(process.env.GEMINI_API_KEY || '')
 
   private static model = this.genAI.getGenerativeModel({
     model: "gemini-1.5-pro",
