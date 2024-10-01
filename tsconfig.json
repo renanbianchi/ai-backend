@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["dom", "es2015", "es2016", "es2017", "es2019"],
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "typeRoots" : ["./node_modules/@types", "./src/@types"]
+  },
+  "ts-node": {"esm": true},
+  "include": ["src/**/*", "src/*", "**/src/**/*.ts", "jest/*.ts", "src/@types/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
