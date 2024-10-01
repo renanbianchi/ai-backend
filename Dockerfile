@@ -27,8 +27,6 @@ COPY . .
 
 COPY prisma ./prisma
 
-COPY arquivo.env .env
-
 RUN npx prisma generate
 
 RUN mkdir -p /usr/src/app/uploads && chmod -R 777 /usr/src/app/uploads
